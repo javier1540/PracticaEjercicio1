@@ -1,0 +1,17 @@
+package main
+
+import "fmt"
+
+type Coche struct {
+	puertas int
+}
+
+func (c *Coche) incrementPuertas() {
+	c.puertas += 1
+}
+
+func main() {
+	coche := Coche{}
+	coche.incrementPuertas()
+	fmt.Println(coche.puertas)
+}
